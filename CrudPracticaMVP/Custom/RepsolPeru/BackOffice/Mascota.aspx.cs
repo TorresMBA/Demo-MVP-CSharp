@@ -61,7 +61,7 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice
 
                 if (imgEditar != null)
                 {
-                    imgEditar.ImageUrl = "";// System.Resources.global.App_Themes;
+                    imgEditar.ImageUrl = Resources.global.App_themes + "ilion_skin/img/" + "/editar_fila.png";
                 }
                 Console.WriteLine(fila.ToString());
             }
