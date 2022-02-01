@@ -37,7 +37,7 @@ namespace CrudPracticaMVP.MVP.Presenter.MascotaPresenter
             Limpiar();
         }
 
-        public void BuscarMascota()
+        public void BuscarMascota(int id)
         {
 
         }
@@ -47,9 +47,10 @@ namespace CrudPracticaMVP.MVP.Presenter.MascotaPresenter
 
         }
 
-        public void EliminarMascota()
+        public void EliminarMascota(int id)
         {
-            _mascotaService.EliminarMascota(0);
+            _mascotaService.EliminarMascota(id);
+            listarMascotas();
         }
 
         public void Limpiar()

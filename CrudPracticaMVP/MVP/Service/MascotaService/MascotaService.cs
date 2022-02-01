@@ -59,7 +59,7 @@ namespace CrudPracticaMVP.MVP.Service.MascotaService
         {
             try
             {
-                oMascotaLib.EliminarMascota(connectionString, idMascota);
+                var resul = oMascotaLib.EliminarMascota(connectionString, idMascota);
             }
             catch (Exception ex)
             {
