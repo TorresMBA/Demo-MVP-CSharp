@@ -4,3 +4,9 @@ C:\Users\btorreme\source\repos\CrudPracticaMVP\RepsolPeru.Everis.Prueba\obj\Debu
 C:\Users\btorreme\source\repos\CrudPracticaMVP\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.CoreCompileInputs.cache
 C:\Users\btorreme\source\repos\CrudPracticaMVP\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.dll
 C:\Users\btorreme\source\repos\CrudPracticaMVP\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.pdb
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\bin\Debug\RepsolPeru.Everis.Prueba.dll
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\bin\Debug\RepsolPeru.Everis.Prueba.pdb
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.AssemblyReference.cache
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.CoreCompileInputs.cache
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.dll
+C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.pdb

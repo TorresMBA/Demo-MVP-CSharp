@@ -67,13 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Themes\Test_Skin\img\borra_fila.png" />
-    <Content Include="App_Themes\Test_Skin\img\editar.png" />
+    <Content Include="lib\estilos\Ilion_skin\img\borra_fila.png" />
+    <Content Include="lib\estilos\Ilion_skin\img\editar.png" />
     <Content Include="Custom\RepsolPeru\BackOffice\Mascota.aspx" />
     <Content Include="sqlserver.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\global.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>global.resx</DependentUpon>
+    </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Mascota.aspx.cs">
       <DependentUpon>Mascota.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -118,7 +123,15 @@
       <Name>RepsolPeru.Everis.Prueba</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_GlobalResources\global.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>global.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\Test_Skin\img\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
