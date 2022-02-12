@@ -1,4 +1,4 @@
-﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/ShareMaster/Share.Master" AutoEventWireup="true" CodeBehind="Mascota.aspx.cs" Inherits="CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Mascota" %>
+﻿    <%@ Page Title="" EnableEventValidation="false" Language="C#" MasterPageFile="~/ShareMaster/Share.Master" AutoEventWireup="true" CodeBehind="Mascota.aspx.cs" Inherits="CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Mascota" %>
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <title>Soy la Pagina Hija</title>
         <style>
@@ -6,11 +6,27 @@
                margin: 0;
                padding: 0;
            }
+            .auto-style1 {
+                height: 24px;
+                width: 86px;
+            }
+            .auto-style2 {
+                width: 86px;
+            }
             </style>
     </asp:Content>
 
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <script type="text/javascript" languaje="javascript">
+            function func_confirm() {
+                if (confirm("Esta seguro de eliminar este registro?")) {
+                     return true;
+                 } else {
+                     return false;
+                 }
 
+             }
+        </script>
         Nombre:<asp:TextBox ID="nombre" runat="server"></asp:TextBox>
         <br />
         Raza:<asp:TextBox ID="raza" runat="server"></asp:TextBox>
@@ -64,7 +80,7 @@
             <thead>
                 <tr>
                     <td>Id</td>
-                    <td>Nombre</td>
+                    <td class="auto-style2">Nombre</td>
                     <td>Raza</td>
                     <td>Editar</td>
                     <td>Eliminar</td>
@@ -83,14 +99,14 @@
                             <td>
                                 <%# Eval("raza") %>
                             </td>
-                            <td>
+                            <td>   
                                 <itemtemplate>
-                                    <asp:ImageButton ID="imgEditar" runat="server" Visible="false" CommandArgument='<%#Eval("id") %>' CausesValidation="False" CommandName="Eliminar" style="margin-left:15px;" OnClientClick="return func_confirm();"  />
+                                    <asp:ImageButton ID="imgEditar" runat="server" Visible="false" CommandArgument='<%#Eval("id") %>' CausesValidation="False" CommandName="Editar" style="margin-left:15px;"   />
                                 </itemtemplate>
                             </td>
                             <td>
                                 <itemtemplate>
-                                    <asp:ImageButton ID="imgEliminar" runat="server" Visible="false" CommandArgument='<%#Eval("id") %>' CausesValidation="False" CommandName="Eliminar" style="margin-left:15px;" OnClientClick="return func_confirm();"  />
+                                    <asp:ImageButton ID="imgEliminar" runat="server" Visible="false" CommandArgument='<%#Eval("id") %>' CausesValidation="False" CommandName="Eliminar" style="margin-left:15px;" OnClientClick="return func_confirm();" />
                                 </itemtemplate>
                             </td>
                         </tr>
@@ -99,6 +115,10 @@
              </tbody>
         </table>
         <br />
+        <br />
+        <br />
+        <asp:Repeater ID="Repeater2" runat="server">
+        </asp:Repeater>
         <br />
         <%--<asp:imagebutton id="imagebutton1" runat="server" imageurl="~/sqlserver.png" />--%>
     </asp:Content>
