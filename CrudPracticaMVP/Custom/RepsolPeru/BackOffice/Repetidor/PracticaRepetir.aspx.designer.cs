@@ -7,12 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
-{
+namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
 
 
-    public partial class PracticaRepetir
-    {
+    public partial class PracticaRepetir {
 
         /// <summary>
         /// Control form1.
@@ -24,13 +22,13 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control ListaProgramas.
+        /// Control ScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ListaProgramas;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
         /// Control btnEnviar.
@@ -40,5 +38,14 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEnviar;
+
+        /// <summary>
+        /// Control ProgramasAfiliados.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater ProgramasAfiliados;
     }
 }

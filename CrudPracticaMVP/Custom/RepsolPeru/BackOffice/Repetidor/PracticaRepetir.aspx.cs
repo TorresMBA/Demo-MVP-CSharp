@@ -10,15 +10,15 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
 {
     public partial class PracticaRepetir : System.Web.UI.Page
     {
-        private List<ProgramasCliente> ProgramaClientesList
+        private List<Programas> ProgramaClientesList
         {
-            get { return (List<ProgramasCliente>)ViewState["ProgramaClientesList"]; }
+            get { return (List<Programas>)ViewState["ProgramaClientesList"]; }
             set { ViewState["ProgramaClientesList"] = value; }
         }
 
-        private List<ProgramasCliente> ProgramaClientesListDesafiliar
+        private List<Programas> ProgramaClientesListDesafiliar
         {
-            get { return (List<ProgramasCliente>)ViewState["ProgramaClientesListDesafiliar"]; }
+            get { return (List<Programas>)ViewState["ProgramaClientesListDesafiliar"]; }
             set { ViewState["ProgramaClientesListDesafiliar"] = value; }
         }
 
@@ -33,36 +33,36 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
 
         private void CargarProgramasList()
         {
-            this.ListaProgramas.DataSource = ProgramaClientesList;
-            this.ListaProgramas.DataBind();
+            this.ProgramasAfiliados.DataSource = ProgramaClientesList;
+            this.ProgramasAfiliados.DataBind();
         }
 
         private void GetProgramas()
         {
-            List<ProgramasCliente> programasClientes = new List<ProgramasCliente>();
+            List<Programas> programasClientes = new List<Programas>();
 
-            ProgramasCliente obj = new ProgramasCliente();
-            obj.CodigoPrograma = "168";
-            obj.NombrePrograma = "Promocard";
-            obj.EstadoDesafiliado = true;
+            Programas obj = new Programas();
+            obj.CodigoPrograma = 114;
+            obj.NombrePrograma = "LATAM Pass";
+            obj.EstadoSolicitudSF = true;
             programasClientes.Add(obj);
 
-            ProgramasCliente obj2 = new ProgramasCliente();
-            obj2.CodigoPrograma = "114";
+            Programas obj2 = new Programas();
+            obj2.CodigoPrograma = 115;
             obj2.NombrePrograma = "AFP Prima";
-            obj2.EstadoDesafiliado = false;
+            obj2.EstadoSolicitudSF = false;
             programasClientes.Add(obj2);
 
-            ProgramasCliente obj3 = new ProgramasCliente();
-            obj3.CodigoPrograma = "4";
-            obj3.NombrePrograma = "Cmr Puntos";
-            obj3.EstadoDesafiliado = true;
+            Programas obj3 = new Programas();
+            obj3.CodigoPrograma = 4;
+            obj3.NombrePrograma = "CMR Puntos";
+            obj3.EstadoSolicitudSF = true;
             programasClientes.Add(obj3);
 
-            ProgramasCliente obj4 = new ProgramasCliente();
-            obj4.CodigoPrograma = "115";
-            obj4.NombrePrograma = "Latam Pass";
-            obj4.EstadoDesafiliado = false;
+            Programas obj4 = new Programas();
+            obj4.CodigoPrograma = 168;
+            obj4.NombrePrograma = "PromoCard";
+            obj4.EstadoSolicitudSF = false;
             programasClientes.Add(obj4);
 
             ProgramaClientesList = programasClientes;
@@ -76,7 +76,7 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
 
             if (ProgramaClientesListDesafiliar == null)
             {
-                ProgramaClientesListDesafiliar = new List<ProgramasCliente>();
+                ProgramaClientesListDesafiliar = new List<Programas>();
             }
 
             if (!string.IsNullOrEmpty(codeProgram.Value))
@@ -86,15 +86,15 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
                 {
                     if (chk.Checked)
                     {
-                        program.EstadoDesafiliado = true;
-                        if (!ProgramaClientesListDesafiliar.Exists(i => i.CodigoPrograma == codeProgram.Value))
+                        program.EstadoSolicitudSF = true;
+                        if (!ProgramaClientesListDesafiliar.Exists(i => i.CodigoPrograma == int.Parse(codeProgram.Value)))
                         {
                             ProgramaClientesListDesafiliar.Add(program);
                         }
                     }
                     else
                     {
-                        program.EstadoDesafiliado = false;
+                        program.EstadoSolicitudSF = false;
                     }
 
                 }
@@ -113,12 +113,26 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
             RepeaterItem item = (RepeaterItem)chk.NamingContainer;
             HiddenField codeProgram = (HiddenField)item.FindControl("CodigoOculto");
 
-            var program = ProgramaClientesList.Find(x => x.CodigoPrograma.Equals(codeProgram.Value));
+            var program = ProgramaClientesList.Find(x => x.CodigoPrograma == int.Parse(codeProgram.Value));
 
-            if (program.EstadoDesafiliado)
+            if (program.EstadoSolicitudSF)
             {
                 chk.Enabled = false;
-                //chk.Text = program.NombrePrograma + DateTime.Now.ToString(" dd/MM/yyyy HH:mm:ss") + "**";
+                //program.NombrePrograma + DateTime.Now.ToString(" dd/MM/yyyy HH:mm:ss") + "**";
+            }
+        }
+
+        protected void lblFechaDesafiliacion_Load(object sender, EventArgs e) {
+            Label lbl = (Label)sender;
+            RepeaterItem item = (RepeaterItem)lbl.NamingContainer;
+            HiddenField codeProgram = (HiddenField)item.FindControl("CodigoOculto");
+
+            var program = ProgramaClientesList.Find(x => x.CodigoPrograma == int.Parse(codeProgram.Value));
+
+            if(program.EstadoSolicitudSF) {
+                lbl.Text = "En Proceso**";
+            } else if((!string.IsNullOrEmpty(program.FechaDesafiliacionPublicidad)) && program.Publicidad.Equals("0")) {
+                lbl.Text = DateTime.Now.ToString(" dd/MM/yyyy HH:mm:ss") + "*";
             }
         }
     }
