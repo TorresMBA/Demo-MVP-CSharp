@@ -1,0 +1,265 @@
+﻿#ctl00_wfInterface_loadCustom {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: url("/lib/estilos/Repsol/images/reload.gif") no-repeat center center rgba(0,0,0,0.25);
+    background-size: 36px;
+}
+
+.SectionHeader {
+    background-color: #fcfcfc;
+    border-color: #f0f0f0;
+    border-radius: 3px 3px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    color: #5e5f61;
+    line-height: 12px;
+    padding: 8px 12px;
+    margin: 2px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+input, select {
+    border-color: #ccc;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Type", sans-serif;
+    font-size: 12px;
+    height: 26px;
+    margin: 0 5px 0 0;
+    padding: 2px 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+    input[type=checkbox] {
+        width: 18px;
+    }
+
+
+label, span {
+    color: #76767E;
+    font-family: "Type", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 0 2px;
+}
+
+.imgMenu {
+    margin-right: 5px;
+    height: 14px;
+}
+
+.rowMenu, .rowSubmenu {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkgoldenrod;
+    width: 95%;
+}
+
+.rowItemSubmenu {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+img {
+    border: 0px;
+    height: 24px;
+}
+
+a {
+    width: 100%;
+    text-decoration-color: none;
+}
+
+.spanMenuWidth {
+    display: inline-block;
+    width: 95%;
+}
+
+#formDetalleRol, #formDatosGenerales {
+    margin-left: 5px;
+}
+
+/*#ControlPanelFooter {
+    display: flex;
+    align-items: center;
+}*/
+
+.interior_item {
+    padding-left: 20px;
+    display: none;
+}
+
+.rowCodigo {
+    border-bottom: 1px solid darkorange;
+    width: 99%;
+    padding-bottom: 2px;
+}
+
+.rowCodigoValue {
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+    .switch input {
+        opacity: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #008F39;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.FILTERS_MASTER {
+    padding: 3px 6px 3px 3px;
+    margin: 8px 5px 0;
+    width: auto;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}

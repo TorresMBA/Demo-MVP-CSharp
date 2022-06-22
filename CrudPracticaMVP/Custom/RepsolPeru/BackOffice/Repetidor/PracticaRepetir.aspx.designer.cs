@@ -7,10 +7,12 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
+namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
+{
 
 
-    public partial class PracticaRepetir {
+    public partial class PracticaRepetir
+    {
 
         /// <summary>
         /// Control form1.
@@ -31,15 +33,6 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// Control btnEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviar;
-
-        /// <summary>
         /// Control ProgramasAfiliados.
         /// </summary>
         /// <remarks>
@@ -47,5 +40,23 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater ProgramasAfiliados;
+
+        /// <summary>
+        /// Control btnAceptar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
+
+        /// <summary>
+        /// Control hListPrograms.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hListPrograms;
     }
 }

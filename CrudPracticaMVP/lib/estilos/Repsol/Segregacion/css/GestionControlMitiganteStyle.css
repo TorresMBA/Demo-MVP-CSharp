@@ -1,0 +1,124 @@
+﻿.btn-disabled {
+    background-color: #dadada;
+    border-color: #dadada;
+}
+
+.pd20 {
+    padding-top: 20px;
+}
+
+.h10 {
+    height: 10px;
+}
+
+.h15 {
+    height: 15px;
+}
+
+.btnAprobar {
+    background-color: #041E42;
+    color: white;
+    border-color: #041E42;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 4px;
+}
+
+.btnRechazar {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*table.dataTable.stripe tbody > tr.selected, table.dataTable.stripe tbody > tr > .selected, table.dataTable.display tbody > tr.selected, table.dataTable.display tbody > tr > .selected {
+    background-color: transparent !important;
+}
+
+    table.dataTable.display tbody > tr.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.selected > .sorting_1 {
+        background-color: transparent !important;
+    }
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+.ui-widget-header {
+    border: 1px solid #e78f08;
+    background: #f6a828 url(../images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+    color: #ffffff;
+    font-weight: bold;
+}
+*/
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.dataTables_filter input {
+    background: url(/lib/estilos/Repsol/images/btn_ico_search.png) no-repeat scroll right center #FCFCFC;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+
+
+.link-popup-sf {
+    cursor: pointer;
+    color: #2589a2;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.txtmodal {
+    padding: 3px;
+    font-size: smaller;
+}
+
+.LabelModal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-Family: Tahoma;
+    font-size: 12px;
+    text-align: left;
+    color: #686868;
+}
+
+.TablaModal {
+    border: 0;
+    font-size: 12px;
+    padding: 5px;
+    color: #000000;
+}
+
+.clsTextArea {
+    margin-bottom: 0.5rem;
+}
+
+#dtResultados_filter {
+    float:left !important;
+    margin-left:10px;
+}
+
+img {
+    border: 0px;
+    height: 24px;
+}
+
+

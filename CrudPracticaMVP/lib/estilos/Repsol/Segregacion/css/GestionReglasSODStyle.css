@@ -1,0 +1,279 @@
+﻿
+.btnAprobar {
+    background-color: #041E42;
+    color: white;
+    border-color: #041E42;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btnRechazar {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btnRechazarLite {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 20px !important;
+    padding: 2px 6px !important;
+}
+
+img {
+    border: 0px;
+    height: 24px;
+}
+
+
+/*Dejar hasta aqui*/
+td.details-control {
+    background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-down.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-up.png') no-repeat center center;
+}
+
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.dataTables_filter input {
+    background: url(/lib/estilos/Repsol/images/btn_ico_search.png) no-repeat scroll right center #FCFCFC;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+
+/*aqui datatables 2*/
+
+
+/*modal detalle solicitud */
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: .1em 0;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: .4em 1em;
+    position: relative;
+}
+
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+}
+
+.ui-widget-header {
+    border-left: 0px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-bottom: 3px solid #dddddd;
+    background: #fff;
+    color: #333333;
+    font-weight: bold;
+}
+
+.sf-input-detalle {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: 400 13.3333px Arial;
+}
+
+.mt0 {
+    margin-top: 0px !important;
+}
+
+h1, .h1 {
+    /*font-size: 2.6rem;
+	margin-block-start: 0.67em;*/
+    margin-block-end: 0.17em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.o_Message_SF_DT.o-not-discussion {
+    /*background-color: #edeff1;*/
+    border-bottom: 1px solid #cfd5db;
+}
+
+.txtRoboto {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 12px;
+    color: #666666; /*#3fa9c3; /*#666666;*/
+    /*font-size: 1.08333333rem;*/
+    font-weight: 400;
+    line-height: 0.2; /*MAA*/
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.o_MessageList_separator {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.o_Message_SF_DT {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.ENCABEZADOL_SG {
+    text-align: right;
+    font-Family: Tahoma;
+    font-size: 5.0pt;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 400px;
+    height: 23px;
+    text-align: right;
+    padding-right: 20px;
+    background: #0094ff;
+}
+
+
+.gr-row .gr-bl.gr-bl-4_SF_DT {
+    width: 33.33333333333333%;
+    text-align: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+/*Fin*/
+
+
+/*<!--Modal Detalle -->*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.open {
+    display: block !important; /* Hidden by default */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 900px; /* Could be more or less, depending on screen size */
+    height: 650px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.gr-row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ui-widget-header {
+    border: none;
+    background: none;
+    color: none;
+}
+
+.ui-tabs {
+    margin-top: 0px;
+}
+
+div#browseUSULIC {
+    padding: 5px 10px 20px 10px;
+}
+
+.ui-widget-content {
+    border: none;
+    background: none;
+    color: #333333;
+}
+
+.btnhidden {
+    visibility: hidden;
+}
+
+
+
+
+

@@ -1,0 +1,131 @@
+﻿.btnAprobar {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px 6px;
+}
+
+.btnRechazar {
+    background-color: #041E42;
+    color: white;
+    border-color: #041E42;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px 6px;
+}
+
+
+    td.details-control {
+        background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-down.png') no-repeat center center;
+        cursor: pointer;
+    }
+
+tr.shown td.details-control {
+    background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-up.png') no-repeat center center;
+}
+
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.dataTables_filter input {
+    background: url(/lib/estilos/Repsol/images/btn_ico_search.png) no-repeat scroll right center #FCFCFC;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+
+
+.link-popup-sf {
+    cursor: pointer;
+    color: #2589a2;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+/*<!--Modal Detalle -->*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.open {
+    display: block !important; /* Hidden by default */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 900px; /* Could be more or less, depending on screen size */
+    height: 650px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.gr-row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*.ui-widget-header {
+    border: none;
+    background: none;
+    color: none;
+}*/
+
+.ui-tabs {
+    margin-top: 0px;
+}
+
+div#browseUSULIC {
+    padding: 5px 10px 20px 10px;
+}
+
+/*.ui-widget-content {
+    border: none;
+    background: none;
+    color: #333333;
+}*/
+
+.btnhidden {
+    visibility: hidden;
+}

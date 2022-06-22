@@ -1,0 +1,68 @@
+﻿input, select {
+    border-color: #ccc;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Type", sans-serif;
+    font-size: 12px;
+    height: 26px;
+    margin: 0 5px 0 0;
+    padding: 2px 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+    input[type=checkbox] {
+        width: 18px;
+    }
+
+
+label, span {
+    color: #76767E;
+    font-family: "Type", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 0 2px;
+}
+
+#dtResultadoDetalleCargo_filter {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.dtRowStyle {
+    text-align:center;
+}
+
+.btn-agregar-cargo {
+    margin-left: 1210px;
+    position: absolute;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.btn-detalle-enabled {
+    background-color: #f80;
+    border-color: #ff6101;
+    color: white;
+}
+
+    .btn-detalle-enabled:hover {
+        background-color: #f80;
+        border-color: #ff6101;
+        color: white;
+    }
+
+.btn-detalle-disabled {
+    background-color: lightgray;
+    border-color: lightgray;
+    color: #76767E;
+}
+
+    .btn-detalle-disabled:hover {
+        background-color: lightgray;
+        border-color: lightgray;
+        color: #76767E;
+    }

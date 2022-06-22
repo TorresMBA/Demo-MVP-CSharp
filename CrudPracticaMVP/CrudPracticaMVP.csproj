@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx" />
     <Content Include="lib\estilos\Ilion_skin\img\borra_fila.png" />
     <Content Include="lib\estilos\Ilion_skin\img\editar.png" />
@@ -87,6 +89,20 @@
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Mascota.aspx.designer.cs">
       <DependentUpon>Mascota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx.designer.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx.cs">
+      <DependentUpon>TestModalAspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx.designer.cs">
+      <DependentUpon>TestModalAspx.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx.cs">
       <DependentUpon>PracticaRepetir.aspx</DependentUpon>

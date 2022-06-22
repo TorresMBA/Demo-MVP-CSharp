@@ -44,25 +44,33 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
             Programas obj = new Programas();
             obj.CodigoPrograma = 114;
             obj.NombrePrograma = "LATAM Pass";
-            obj.EstadoSolicitudSF = true;
+            obj.EstadoSolicitudSF = false;
+            obj.FechaDesafiliacionPublicidad = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            obj.Publicidad = "0";
             programasClientes.Add(obj);
 
             Programas obj2 = new Programas();
             obj2.CodigoPrograma = 115;
             obj2.NombrePrograma = "AFP Prima";
-            obj2.EstadoSolicitudSF = false;
+            obj2.EstadoSolicitudSF = true;
+            obj2.FechaDesafiliacionPublicidad = "";
+            obj2.Publicidad = "1";
             programasClientes.Add(obj2);
 
             Programas obj3 = new Programas();
             obj3.CodigoPrograma = 4;
             obj3.NombrePrograma = "CMR Puntos";
             obj3.EstadoSolicitudSF = true;
+            obj3.FechaDesafiliacionPublicidad = "";
+            obj3.Publicidad = "1";
             programasClientes.Add(obj3);
 
             Programas obj4 = new Programas();
             obj4.CodigoPrograma = 168;
             obj4.NombrePrograma = "PromoCard";
             obj4.EstadoSolicitudSF = false;
+            obj4.FechaDesafiliacionPublicidad = "";
+            obj4.Publicidad = "1";
             programasClientes.Add(obj4);
 
             ProgramaClientesList = programasClientes;
@@ -81,27 +89,25 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
 
             if (!string.IsNullOrEmpty(codeProgram.Value))
             {
-                var program = ProgramaClientesList.Find(x => x.CodigoPrograma.Equals(codeProgram.Value));
-                if (program != null)
+                var program = ProgramaClientesList.Find(x => x.CodigoPrograma == int.Parse(codeProgram.Value));
+                if (program != null && !program.EstadoSolicitudSF && chk.Checked)
                 {
-                    if (chk.Checked)
+                    program.EstadoSolicitudSF = true;
+                    if (!ProgramaClientesListDesafiliar.Exists(i => i.CodigoPrograma == int.Parse(codeProgram.Value)))
                     {
-                        program.EstadoSolicitudSF = true;
-                        if (!ProgramaClientesListDesafiliar.Exists(i => i.CodigoPrograma == int.Parse(codeProgram.Value)))
-                        {
-                            ProgramaClientesListDesafiliar.Add(program);
-                        }
+                        ProgramaClientesListDesafiliar.Add(program);
                     }
-                    else
-                    {
-                        program.EstadoSolicitudSF = false;
-                    }
-
                 }
             }
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            var cantidad = ProgramaClientesListDesafiliar.Count;
+            ProgramaClientesListDesafiliar = null;
+        }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
         {
             var cantidad = ProgramaClientesListDesafiliar.Count;
             ProgramaClientesListDesafiliar = null;
@@ -114,11 +120,11 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
             HiddenField codeProgram = (HiddenField)item.FindControl("CodigoOculto");
 
             var program = ProgramaClientesList.Find(x => x.CodigoPrograma == int.Parse(codeProgram.Value));
-
+            chk.InputAttributes["class"] = "test";
             if (program.EstadoSolicitudSF)
             {
-                chk.Enabled = false;
-                //program.NombrePrograma + DateTime.Now.ToString(" dd/MM/yyyy HH:mm:ss") + "**";
+                chk.InputAttributes["disabled"] = "disabled";
+                chk.Checked = true;
             }
         }
 
@@ -132,7 +138,7 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor
             if(program.EstadoSolicitudSF) {
                 lbl.Text = "En Proceso**";
             } else if((!string.IsNullOrEmpty(program.FechaDesafiliacionPublicidad)) && program.Publicidad.Equals("0")) {
-                lbl.Text = DateTime.Now.ToString(" dd/MM/yyyy HH:mm:ss") + "*";
+                lbl.Text = " " + program.FechaDesafiliacionPublicidad + "*";
             }
         }
     }

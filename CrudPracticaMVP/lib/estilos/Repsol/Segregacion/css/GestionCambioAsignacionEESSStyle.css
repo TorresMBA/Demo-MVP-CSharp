@@ -1,0 +1,1132 @@
+﻿.btn-disabled {
+    background-color: #dadada;
+    border-color: #dadada;
+}
+
+.pd20 {
+    padding-top: 20px;
+}
+
+.h10 {
+    height: 10px;
+}
+
+.h15 {
+    height: 15px;
+}
+
+.btnAprobar {
+    background-color: #041E42;
+    color: white;
+    border-color: #041E42;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btnRechazar {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table.dataTable.stripe tbody > tr.selected, table.dataTable.stripe tbody > tr > .selected, table.dataTable.display tbody > tr.selected, table.dataTable.display tbody > tr > .selected {
+    background-color: transparent !important;
+}
+
+    table.dataTable.display tbody > tr.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.selected > .sorting_1 {
+        background-color: transparent !important;
+    }
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+.ui-widget-header {
+    border: 1px solid #e78f08;
+    background: #f6a828 url(../images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.txtmodal {
+    padding: 3px;
+    font-size: smaller;
+}
+
+.LabelModal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-Family: Tahoma;
+    font-size: 9.0pt;
+    text-align: left;
+    color: #686868;
+}
+
+.TablaModal {
+    border: 0;
+    font-size: 14px;
+    padding: 5px;
+    color: #000000;
+}
+
+.clsTextArea {
+    margin-bottom: 0.5rem;
+}
+
+/*.datossolicitud { MAA
+                    background-color:orange;
+                }*/
+div.dataTables_processing {
+    z-index: 1;
+}
+
+.datoscomprobante {
+    background-color: #f9f9f9; /*#f1edea;#f9f9f9;*/
+}
+
+.datoscomprobante_r {
+    /* background-color: #f9f9f9; */ /*#f1edea;/*#f9f9f9;*/
+    text-align: right;
+}
+
+/*.datoscheckboxsf {
+    background-color: #E9ECEF;*/ /*#e7f2f6;#E9ECEF; F6F6F6 rgb(234, 234, 234);#ddd;*/
+/*}*/
+/*table.dataTable .datoscomprobante th {
+                    background-color:Highlight;
+                }*/
+#tablefactura {
+    width: 45%;
+}
+
+    #tablefactura thead th {
+        background-color: #f1edea;
+        ;
+    }
+
+    #tablefactura tbody td {
+        text-align: center;
+    }
+
+#tablenotacredito {
+    width: 50%;
+}
+
+    #tablenotacredito thead th {
+        background-color: #f1edea;
+        ;
+    }
+
+    #tablenotacredito tbody td {
+        text-align: center;
+    }
+
+#tablenotadebito {
+    width: 30%;
+}
+
+    #tablenotadebito thead th {
+        background-color: #f1edea;
+        ;
+    }
+
+    #tablenotadebito tbody td {
+        text-align: center;
+    }
+
+td.details-control {
+    background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-down.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('/lib/estilos/Repsol/Salesforce/images/SF_angle-arrow-up.png') no-repeat center center;
+}
+
+td.editar-serie {
+    background: url('/lib/estilos/Repsol/images/editar.png') no-repeat center center;
+    cursor: pointer;
+}
+
+td.save-serie {
+    background: url('/lib/estilos/Repsol/images/guardar.png') no-repeat center center;
+}
+
+td.editar-fecha {
+    background: url('/lib/estilos/Repsol/images/editar.png') no-repeat center center;
+    cursor: pointer;
+}
+
+td.save-fecha {
+    background: url('/lib/estilos/Repsol/images/guardar.png') no-repeat center center;
+}
+
+div.dataTables_wrapper { /*MAA*/
+    width: 100%;
+}
+
+table.dataTable tr th.select-checkbox.selected::after {
+    content: "✔";
+    margin-top: -11px;
+    margin-left: -4px;
+    text-align: center;
+    text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
+}
+/*table {MAA
+                  table-layout: fixed;
+                  width: 100%;
+                  border-collapse: collapse;
+                }*/
+/*#dtAprobaciones thead th{
+                    background-color: orange !important;
+                }*/
+
+table.dataTable.stripe tbody > tr.selected, table.dataTable.stripe tbody > tr > .selected, table.dataTable.display tbody > tr.selected, table.dataTable.display tbody > tr > .selected {
+    background-color: transparent !important;
+}
+
+    table.dataTable.display tbody > tr.selected > .sorting_1, table.dataTable.order-column.stripe tbody > tr.selected > .sorting_1 {
+        background-color: transparent !important;
+    }
+
+.paginate_button.next, .paginate_button.last {
+    width: auto !important;
+    float: none !important;
+    height: auto !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 3px 7px;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 4px;
+    border-bottom: 1px solid #111;
+}
+
+.fs-wrap {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    font-Family: Tahoma;
+    font-size: 11pt;
+    color: #333;
+}
+
+    .fs-wrap.multiple .fs-option.selected .fs-checkbox i {
+        background-color: #ff8200;
+        border-color: transparent;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.fs-label-wrap .fs-label {
+    font-Family: Tahoma;
+    padding: 1px 1px 1px 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px;
+    color: #333;
+}
+
+.space10_bottom {
+    padding-bottom: 14px;
+}
+
+.SFWF_field_invalid {
+    color: #DC6965 !important;
+    border-color: #DC6965 !important;
+}
+
+.SFWF_field_number {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 10.0pt;
+}
+
+.SFWF_field_widget {
+    display: inline-block;
+    text-align: inherit;
+}
+
+@media (min-width: 475px) {
+    .SFWF_form_view .SFWFC__inline.SFWF_inner_group, .SFWF_form_view .SFWF_inner_group.SFWFC__right, .SFWF_form_view .SFWF_inner_group.SFWF_group.SFWFC__subtotal_footer,
+    .SFWF_form_view .SFWF_inner_group.SFWFC__left {
+        width: 1px !important;
+    }
+}
+
+.SFWF_form_view .SFWFC__right, .SFWF_form_view .SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer {
+    float: right !important;
+}
+
+@media (min-width: 475px) {
+    .SFWF_form_view.SFWF_form_editable .SFWF_row > .SFWF_field_widget, .SFWF_form_view.SFWF_form_editable .SFWF_row > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 0 !important;
+    }
+
+        .SFWF_row > .SFWF_field_widget.SFWF_field_boolean, .SFWF_form_view.SFWF_form_editable .SFWF_row > .SFWF_field_widget.SFWF_priority, .SFWF_form_view.SFWF_form_editable .SFWF_row > div.SFWF_field_boolean, .SFWF_form_view.SFWF_form_editable .SFWF_row >
+        div.SFWF_priority {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto !important;
+        }
+}
+
+.SFWF_form_view .SFWF_group.SFWF_inner_group > tbody > tr > td.SFWF_td_label {
+    width: 0%;
+    padding: 0 15px 0 0;
+    min-width: 150px;
+}
+
+.SFWF_form_view .SFWF_group .SFWF_form_label {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.SFWF_form_view .SFWF_group .SFWF_field_widget {
+    width: 100%;
+}
+
+.SFWF_form_label {
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer > tbody > tr > td {
+    padding: 0;
+}
+
+.SFWF_form_view .SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer > tbody > tr > td.SFWF_td_label {
+    text-align: right;
+}
+
+.SFWF_form_view .SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer > tbody > tr > td .SFWF_form_label {
+    padding-right: 20px;
+    min-width: 0;
+    white-space: nowrap;
+}
+
+.SFWF_inner_group.SFWFC__subtotal_footer > tbody > tr:first-child > td {
+    padding-top: 4px;
+}
+
+.SFWF_form_view .SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer
+.SFWFC__subtotal_footer_separator {
+    width: 100%;
+    text-align: right;
+    border-top: 1px solid #dee2e6;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.SFWF_address_city {
+    margin-right: 2%;
+}
+
+.SFWF_form_view .SFWF_group.SFWF_inner_group.SFWFC__subtotal_footer {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding-right: 65px;
+}
+
+.SFWFC__subtotal_footer_separator {
+    border-top: 1px solid #dee2e6;
+}
+
+.SFWFC__subtotal_footer_separator_solo {
+    border-top: 1px solid #dee2e6;
+}
+
+.SFWFC__tax_group_editable {
+    width: 100%;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.dataTables_filter input {
+    background: url(/lib/estilos/Repsol/images/btn_ico_search.png) no-repeat scroll right center #FCFCFC;
+    padding-left: 3px;
+    padding-right: 20px;
+}
+
+.gr-row .gr-bl.gr-bl-2a {
+    width: 20.666666666666664%;
+}
+
+.my-select-box-CELDA {
+    font-Family: Tahoma;
+    font-size: 9.0pt;
+    color: #333;
+}
+
+.modal_dtSF {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050;
+    overflow: auto;
+    width: 300px;
+    margin: -15px 0 0 -15px;
+    height: 120px;
+}
+
+.hide-close .ui-dialog-titlebar-close {
+    display: none
+}
+
+<!-- modal detalle solicitud -->
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: .1em 0;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: .4em 1em;
+    position: relative;
+}
+
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+}
+
+.ui-widget-header {
+    border-left: 0px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-bottom: 3px solid #dddddd;
+    background: #fff;
+    color: #333333;
+    font-weight: bold;
+}
+
+.sf-input-detalle {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: 400 13.3333px Arial;
+}
+
+.mt0 {
+    margin-top: 0px !important;
+}
+
+h1, .h1 {
+    /*font-size: 2.6rem;
+	margin-block-start: 0.67em;*/
+    margin-block-end: 0.17em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.o_Message_SF_DT.o-not-discussion {
+    /*background-color: #edeff1;*/
+    border-bottom: 1px solid #cfd5db;
+}
+
+.txtRoboto {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 12px;
+    color: #666666; /*#3fa9c3; /*#666666;*/
+    /*font-size: 1.08333333rem;*/
+    font-weight: 400;
+    line-height: 0.2; /*MAA*/
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.o_MessageList_separator {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.o_Message_SF_DT {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.ENCABEZADOL_SF_DT {
+    text-align: right;
+    font-Family: Tahoma;
+    font-size: 9.0pt;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 400px;
+    height: 23px;
+    text-align: right;
+    padding-right: 20px;
+    background: #FFF;
+}
+
+.gr-row .gr-bl.gr-bl-4_SF_DT {
+    width: 33.33333333333333%;
+    text-align: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+<!-- modal detalle solicitud -->
+select {
+    width: 150px; /* Or whatever width you want. */
+}
+
+select.expand {
+    width: auto;
+}
+
+.ui-dialog button.custom {
+    background-color: #041E42;
+    color: white;
+    border-color: #041E42;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ui-dialog button.custom2 {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f80;
+    border-color: #ff6101;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.428571429;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ui-dialog button.custom:hover {
+    color: #fff;
+    background-color: #ff6b01;
+    border-color: #ff6101;
+}
+
+.ui-dialog button.custom2:hover {
+    color: #fff;
+    background-color: #ff6b01;
+    border-color: #ff6101;
+}
+
+.link-popup-sf {
+    cursor: pointer;
+    color: #2589a2;
+    text-align: left;
+    text-decoration: underline;
+}
+/*
+td .link-popup-sf .active {
+    color: #2589a2;
+    text-align: left;
+	text-decoration: underline;
+}
+td .link-popup-sf:hover, .link-popup-sf.active:hover {
+        color: #ffac5d;
+		cursor: pointer;
+}*/
+.select-item {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    vertical-align: middle;
+    /*border: 1px solid #e7f2f6;
+    background-color: #e7f2f6;*/
+    color: #333;
+    font-weight: bold;
+}
+/*
+table.dataTable tbody td {
+	display: table-cell;
+    max-width: 100%;
+	word-wrap: break-word;
+	width: 100%; min-width: 50px;
+  /*  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+	width: 100%;
+    margin-bottom: 1rem;
+	table-layout: fixed;
+}*/
+.codsolicitudSF {
+    color: #0000FF;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-popup-estadosf {
+    cursor: pointer;
+}
+
+.estadoSF_grilla {
+    border: 0;
+    /*    font-size: 12px;*/
+    user-select: none;
+    background-color: rgba(211, 211, 211, 0.5);
+    font-weight: 500;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* vertical-align: top;*/
+    transition: none;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    border-radius: 15px 50px 60px 5px; /*10rem;*/
+
+    cursor: pointer;
+}
+
+.bg-success-light {
+    background-color: #00a09d; /* #006d6b;*/
+    border-color: #00a09d; /* #00605e;*/
+    /*background-color: #005452; rgba(0, 160, 74, 0.5) !important;*/
+    color: #FFF;
+}
+
+.bg-error-light {
+    background-color: rgba(220, 105, 101, 0.5) !important;
+    color: #000;
+}
+
+.bg-warning-light {
+    background-color: #F0AD4E !important;
+    color: #000;
+}
+
+<!-- modal de estado de solicitud SF -->
+.link-est-sf {
+    text-decoration: none;
+    color: #333;
+}
+
+.link-est-sf:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-est-sf:active {
+    text-decoration: none;
+    color: #000;
+}
+
+.link-est-sf:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.modal-body-est-sf {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 16px;
+}
+
+.alert-est-sf {
+    clear: both;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+    .alert-est-sf.alert-est-sf-warning {
+        border-width: 0 0 0 4px;
+    }
+
+.alert-est-sf-warning {
+    color: #7d5a29;
+    background-color: #fcefdc;
+    border-color: #fbe8cd;
+}
+
+.alert-est-sf.alert-est-sf-error {
+    border-width: 0 0 0 4px;
+}
+
+.alert-est-sf-error {
+    color: #723735;
+    background-color: #f8e1e0;
+    border-color: #f5d5d4;
+}
+
+.alert-est-sf.alert-est-sf-success {
+    border-width: 0 0 0 4px;
+}
+
+.alert-est-sf-success {
+    color: #FFF;
+    background-color: #adb5bd;
+    border-color: #6c757d;
+}
+
+.alert-est-sf.alert-est-sf-info {
+    border-width: 0 0 0 4px;
+}
+
+.alert-est-sf-info {
+    color: #212529;
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}
+
+.alert-est-sf-tit {
+    border-bottom: 1px solid #cfd5db;
+}
+
+.txtRoboto-est-sf {
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 12px;
+    color: #666666; /*#3fa9c3; /*#666666;*/
+    /*font-size: 1.08333333rem;*/
+    font-weight: 400;
+    line-height: 0.2; /*MAA*/
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sf-input-detalle-est-sf {
+    margin-bottom: 5px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    font: 400 13.3333px Arial;
+}
+
+<!-- modal de estado de solicitud SF -->
+table.dataTable.display tbody tr.odd {
+    background-color: #ffffff; /*f9f9f9*/
+}
+
+table.dataTable.display tbody tr.odd {
+    background-color: #fff
+}
+
+table.dataTable.display tbody tr.even {
+    background-color: #ffffff;
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: #e7f2f6;
+}
+
+table.dataTable.display tbody tr.odd > .sorting_1 {
+    background-color: #fff;
+}
+
+    table.dataTable.display tbody tr.odd > .sorting_1:hover {
+        background-color: #e7f2f6;
+    }
+
+table.dataTable.display tbody tr.even > .sorting_1 {
+    background-color: #fff;
+}
+
+    table.dataTable.display tbody tr.even > .sorting_1:hover {
+        background-color: #e7f2f6;
+    }
+
+.sf-detalle-textarea {
+    width: 300px;
+    height: 150px;
+}
+/*.clsFecha{
+border: none !important;
+}*/
+<!-- datepicker-- >
+.ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 1px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+    .ui-datepicker .ui-datepicker-title select {
+        font-size: 1em;
+        margin: 1px 0;
+    }
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 45%;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+.ui-datepicker td {
+    border: 0;
+    padding: 1px;
+}
+
+    .ui-datepicker td span,
+    .ui-datepicker td a {
+        display: block;
+        padding: .2em;
+        text-align: right;
+        text-decoration: none;
+    }
+
+.ui-datepicker .ui-datepicker-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+    .ui-datepicker .ui-datepicker-buttonpane button {
+        float: right;
+        margin: .5em .2em .4em;
+        cursor: pointer;
+        padding: .2em .6em .3em .6em;
+        width: auto;
+        overflow: visible;
+    }
+
+        .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+            float: left;
+        }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+    width: auto;
+}
+
+.ui-datepicker-multi .ui-datepicker-group {
+    float: left;
+}
+
+    .ui-datepicker-multi .ui-datepicker-group table {
+        width: 95%;
+        margin: 0 auto .4em;
+    }
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+    width: 50%;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+    width: 33.3%;
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+    width: 25%;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+    border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+    clear: left;
+}
+
+.ui-datepicker-row-break {
+    clear: both;
+    width: 100%;
+    font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+    direction: rtl;
+}
+
+    .ui-datepicker-rtl .ui-datepicker-prev {
+        right: 2px;
+        left: auto;
+    }
+
+    .ui-datepicker-rtl .ui-datepicker-next {
+        left: 2px;
+        right: auto;
+    }
+
+    .ui-datepicker-rtl .ui-datepicker-prev:hover {
+        right: 1px;
+        left: auto;
+    }
+
+    .ui-datepicker-rtl .ui-datepicker-next:hover {
+        left: 1px;
+        right: auto;
+    }
+
+    .ui-datepicker-rtl .ui-datepicker-buttonpane {
+        clear: right;
+    }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+            float: left;
+        }
+
+            .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+            .ui-datepicker-rtl .ui-datepicker-group {
+                float: right;
+            }
+
+    .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+    .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+        border-right-width: 0;
+        border-left-width: 1px;
+    }
+
+.ui-widget {
+    /*font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em; comentado por MAA*/
+}
+
+    .ui-widget .ui-widget {
+        font-size: 1em;
+    }
+/*
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}*/
+.ui-widget-content {
+    border: 0px solid #aaaaaa;
+    background: #ffffff /*url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;*/
+    color: #222222;
+}
+
+*/
+.ui-widget-content a {
+    color: #222222;
+}
+
+.ui-widget-header-plomo {
+    color: #222222;
+    font-weight: bold;
+    /*MAA*/
+    background-repeat: repeat-x;
+    border-color: #eee;
+    /*background-image: linear-gradient(to bottom, #eee 0%, #eee 100%);*/
+}
+
+    .ui-widget-header-plomo a {
+        color: #222222;
+    }
+
+
+/*.ui-widget-header*/
+.ui-datepicker-header {
+    border: 0px solid #aaaaaa;
+    color: #222222;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, #ffb400 0%, #FF8800 100%);
+}
+
+
+
+.ui-widget-header a {
+    color: #222222;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    width: 49%;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 1em;
+    margin: 1px 0;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fed22f;
+    background: #ffe45c /*url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;*/
+    color: #363636;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    /*background: #e6e6e6  50% 50% repeat-x;*/
+    font-weight: normal;
+    color: #555555;
+}
+
+    .ui-state-default a,
+    .ui-state-default a:link,
+    .ui-state-default a:visited {
+        color: #555555;
+        text-decoration: none;
+    }
+
+<!-- end datepicker-- >
