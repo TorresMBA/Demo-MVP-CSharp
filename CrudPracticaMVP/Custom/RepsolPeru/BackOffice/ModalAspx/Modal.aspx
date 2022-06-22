@@ -61,10 +61,11 @@
                         <label>Responsables:</label>
                         <input type="text" placeholder="Test" value="irebaza"/>
                     </section>
-
+                    <br />
                     <section class="main">
                         <div>
                             <span>Roles No Asignados:</span> <asp:Label ID="lblRolesNoAsig" runat="server" Text="120"></asp:Label>
+                            <br />
                             <asp:TextBox ID="inBuscarRolesNoAsig" runat="server" placeholder="Buscar..."></asp:TextBox>
                             <br />
 
@@ -78,24 +79,29 @@
 
                             <asp:Button ID="btnSelecAll" runat="server" Text="Seleccionar Todos" OnClick="btnSelecAll_Click"/>
                         </div>
+                        <br />
                         <div>
                             <span>Roles Asignados:</span> <asp:Label ID="lblRolesAsig" runat="server" Text="6"></asp:Label>
-                            <asp:TextBox ID="inBuscarRolesAsig" runat="server" placeholder="Buscar..."></asp:TextBox>
+                            <br />
+                            <div class="gr-bl gr-bl-11" style="text-align:center;display:flex;">
+                                <asp:TextBox ID="inBuscarRolesAsig" runat="server" placeholder="Buscar..."></asp:TextBox>
+                                <asp:LinkButton ID="BuscarRol" runat="server" OnClick="BuscarRol_Click">
+                                    <img src="/lib/estilos/Repsol/images/btn_ico_search.png" title="Buscar modulo" />
+                                </asp:LinkButton>
+                            </div>
                             <br />
 
-                            <asp:ListBox ID="lstRoleAsig" runat="server" SelectionMode="Multiple" style="width: 100px;">
+                            <asp:ListBox ID="lstRoleAsig" runat="server" SelectionMode="Multiple" style="width: 200px;">
                             </asp:ListBox>
 
                             <asp:Button ID="btnQuitarAll" runat="server" OnClick="btnQuitarAll_Click" Text="Quitar Todos"/>
                         </div>
                     </section>
-
+                    <br />
                     <section class="footer">
                         <asp:Button ID="btnGuardar" OnClientClick="ShowLoadingUI()" runat="server" Text="Guardar" />
                         <asp:Button ID="Cancelar" runat="server" Text="Cancelar"/>
                     </section>
-                    <br />
-                    <label>TEst</label>
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>

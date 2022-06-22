@@ -56,5 +56,29 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.ModalAspx
 
             RolesAsignadosList = obj;
         }
+
+        protected void BuscarRol_Click(object sender, EventArgs e) {
+            try {
+                GetRolesAsignados();
+                List<string> listRolAsig = new List<string>();
+
+                foreach(var str in RolesAsignadosList) {
+                    if(str.Contains(inBuscarRolesAsig.Text)) {
+                        listRolAsig.Add(str);
+                    }
+                }
+
+                if(inBuscarRolesAsig.Text.Equals("") || listRolAsig == null) {
+                    GetRolesAsignados();
+                } else {
+                    RolesAsignadosList = listRolAsig;
+                }
+
+                CargarRolesAsignados();
+            } catch(Exception ex) {
+
+                throw;
+            }
+        }
     }
 }

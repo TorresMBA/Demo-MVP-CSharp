@@ -7,12 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.ModalAspx
-{
+namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.ModalAspx {
 
 
-    public partial class Modal
-    {
+    public partial class Modal {
 
         /// <summary>
         /// Control form1.
@@ -85,6 +83,15 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.ModalAspx
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inBuscarRolesAsig;
+
+        /// <summary>
+        /// Control BuscarRol.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton BuscarRol;
 
         /// <summary>
         /// Control lstRoleAsig.
