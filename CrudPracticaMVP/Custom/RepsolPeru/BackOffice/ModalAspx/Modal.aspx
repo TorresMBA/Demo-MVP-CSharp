@@ -41,7 +41,7 @@
                         '-webkit-border-radius': '10px',
                         '-moz-border-radius': '10px',
                         opacity: .9,
-                        top: '45',
+                        top: '45%',
                         left: '45%'
                     },
                     centerX: false,
