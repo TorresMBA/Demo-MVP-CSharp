@@ -70,6 +70,7 @@
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\VistaGrilla\PracticaGrilla.aspx" />
     <Content Include="lib\estilos\Ilion_skin\img\borra_fila.png" />
     <Content Include="lib\estilos\Ilion_skin\img\editar.png" />
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx.designer.cs">
       <DependentUpon>PracticaRepetir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx.cs">
+      <DependentUpon>PracticaUpdatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx.designer.cs">
+      <DependentUpon>PracticaUpdatePanel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\VistaGrilla\PracticaGrilla.aspx.cs">
       <DependentUpon>PracticaGrilla.aspx</DependentUpon>

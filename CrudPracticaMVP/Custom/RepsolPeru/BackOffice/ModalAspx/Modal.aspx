@@ -14,11 +14,11 @@
 <body>
     <form id="form1" runat="server">
         <script type="text/javascript">
-            function pageLoad(sender, args) {
+            //function pageLoad(sender, args) {
                 var prm = Sys.WebForms.PageRequestManager.getInstance();
                 prm.add_beginRequest(BeginRequestHandler);
                 prm.add_endRequest(EndRequestHandler);
-            }
+            //}
 
 
             function BeginRequestHandler(sender, args) {
@@ -27,6 +27,12 @@
 
             function EndRequestHandler(sender, args) {
                 HideLoadingUI();
+                //Para capturar error del servidor
+                if (args.get_error()) {
+                    document.getElementById("errorMessageLabel").innerText = args.get_error().description;
+                    args.set_errorHandled(true);
+                }
+                //
             }
 
             function ShowLoadingUI() {
@@ -54,7 +60,7 @@
             }
         </script>      
         <div>
-            <asp:ScriptManager runat="server" ID="scriptmanager"></asp:ScriptManager>
+            <asp:ScriptManager runat="server" ID="scriptmanager" AsyncPostBackTimeout="600"></asp:ScriptManager>
             <asp:UpdatePanel runat="server">
                 <ContentTemplate>
                     <section class="head">
@@ -104,6 +110,7 @@
                     </section>
                 </ContentTemplate>
             </asp:UpdatePanel>
+            <span id="errorMessageLabel"></span>
         </div>
     </form>
 </body>
