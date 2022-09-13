@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx" />
@@ -84,6 +85,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx.cs">
+      <DependentUpon>PruebaCicloVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx.designer.cs">
+      <DependentUpon>PruebaCicloVida.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Mascota.aspx.cs">
       <DependentUpon>Mascota.aspx</DependentUpon>
