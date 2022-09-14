@@ -71,7 +71,10 @@
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticarRepetirSelec.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\Sys.WebForm\PracticaSysWebForm.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\ViewState\PracitcaViewState.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\VistaGrilla\PracticaGrilla.aspx" />
     <Content Include="lib\estilos\Ilion_skin\img\borra_fila.png" />
     <Content Include="lib\estilos\Ilion_skin\img\editar.png" />
@@ -121,12 +124,33 @@
     <Compile Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx.designer.cs">
       <DependentUpon>PracticaRepetir.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticarRepetirSelec.aspx.cs">
+      <DependentUpon>PracticarRepetirSelec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticarRepetirSelec.aspx.designer.cs">
+      <DependentUpon>PracticarRepetirSelec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\Sys.WebForm\PracticaSysWebForm.aspx.cs">
+      <DependentUpon>PracticaSysWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\Sys.WebForm\PracticaSysWebForm.aspx.designer.cs">
+      <DependentUpon>PracticaSysWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx.cs">
       <DependentUpon>PracticaUpdatePanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\UpdatePanel\PracticaUpdatePanel.aspx.designer.cs">
       <DependentUpon>PracticaUpdatePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ViewState\PracitcaViewState.aspx.cs">
+      <DependentUpon>PracitcaViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ViewState\PracitcaViewState.aspx.designer.cs">
+      <DependentUpon>PracitcaViewState.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\VistaGrilla\PracticaGrilla.aspx.cs">
       <DependentUpon>PracticaGrilla.aspx</DependentUpon>
