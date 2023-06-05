@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx" />
+    <Content Include="Custom\RepsolPeru\BackOffice\ExportExcelOCsv\PracticaExport.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\TestModalAspx.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\Repetidor\PracticaRepetir.aspx" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx.designer.cs">
       <DependentUpon>PruebaCicloVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ExportExcelOCsv\PracticaExport.aspx.cs">
+      <DependentUpon>PracticaExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\ExportExcelOCsv\PracticaExport.aspx.designer.cs">
+      <DependentUpon>PracticaExport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\Mascota.aspx.cs">
       <DependentUpon>Mascota.aspx</DependentUpon>
