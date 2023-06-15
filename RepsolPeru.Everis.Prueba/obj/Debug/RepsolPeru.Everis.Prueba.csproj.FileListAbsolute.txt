@@ -10,3 +10,9 @@ C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Ev
 C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.CoreCompileInputs.cache
 C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.dll
 C:\Users\bryan\source\repos\NetFramework\Practicas\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.pdb
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\bin\Debug\RepsolPeru.Everis.Prueba.dll
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\bin\Debug\RepsolPeru.Everis.Prueba.pdb
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.AssemblyReference.cache
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.csproj.CoreCompileInputs.cache
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.dll
+D:\Personal\Documentos\Visual Studio 2019\Projects\NET Framework\WebForm\Demo-MVP-CSharp\RepsolPeru.Everis.Prueba\obj\Debug\RepsolPeru.Everis.Prueba.pdb

@@ -5,6 +5,7 @@ using System.Web;
 
 namespace CrudPracticaMVP.MVP.Entities
 {
+    [Serializable]
     public class Mascota
     {
         public int id { get; set; }

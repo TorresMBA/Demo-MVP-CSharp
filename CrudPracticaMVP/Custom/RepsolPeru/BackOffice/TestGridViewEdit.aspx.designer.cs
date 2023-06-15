@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
+namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice {
 
 
-    public partial class PracticarRepetirSelec {
+    public partial class TestChatGPS {
 
         /// <summary>
         /// Control form1.
@@ -22,48 +22,75 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.Repetidor {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control rptVuelos.
+        /// Control ScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptVuelos;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// Control pnlTest.
+        /// Control repeaterDatos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTest;
+        protected global::System.Web.UI.WebControls.Repeater repeaterDatos;
 
         /// <summary>
-        /// Control ContenedorControles.
+        /// Control txtCod.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ContenedorControles;
+        protected global::System.Web.UI.WebControls.TextBox txtCod;
 
         /// <summary>
-        /// Control Message.
+        /// Control txtNom.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Message;
+        protected global::System.Web.UI.WebControls.TextBox txtNom;
 
         /// <summary>
-        /// Control lblTest.
+        /// Control txtRaza.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblTest;
+        protected global::System.Web.UI.WebControls.TextBox txtRaza;
+
+        /// <summary>
+        /// Control btnInsertar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnInsertar;
+
+        /// <summary>
+        /// Control UpdatePanel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel;
+
+        /// <summary>
+        /// Control GridView1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }
