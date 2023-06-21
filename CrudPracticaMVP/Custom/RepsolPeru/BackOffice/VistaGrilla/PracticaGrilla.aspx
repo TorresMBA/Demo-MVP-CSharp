@@ -70,6 +70,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:TextBox ID="txtPageNumber" runat="server" CssClass="page-input"></asp:TextBox>
+            <asp:Button ID="btnGoToPage" runat="server" Text="Ir" OnClick="btnGoToPage_Click" />
+
             <asp:GridView ID="gridView1" runat="server" 
                 AutoGenerateColumns="false" 
                 AllowPaging="true" 
@@ -83,6 +86,16 @@
                     <asp:BoundField  DataField="LastName" HeaderText="Apellido"/>
                 </Columns>
             </asp:GridView>
+            <br />
+            <asp:LinkButton ID="btnPreviousPage" runat="server" OnClick="btnPreviousPage_Click">
+                <span class="glyphicon glyphicon-chevron-left"><</span>
+            </asp:LinkButton>
+
+            <asp:Label ID="lblPageNumber" runat="server" CssClass="page-label"></asp:Label>
+
+            <asp:LinkButton ID="btnNextPage" runat="server" OnClick="btnNextPage_Click">
+                <span class="glyphicon glyphicon-chevron-right">></span>
+            </asp:LinkButton>
         </div>
     </form>
 </body>

@@ -13,6 +13,19 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.VistaGrilla
         protected void Page_Load(object sender, EventArgs e)
         {
             BindGrid();
+
+            // Obtén el número de página actual
+            int currentPage = gridView1.PageIndex + 1;
+
+            // Obtén el número total de páginas
+            int totalPages = gridView1.PageCount;
+
+            // Muestra el número de página actual
+            lblPageNumber.Text = "Página " + currentPage.ToString() + " de " + totalPages.ToString();
+
+            // Habilita/deshabilita los botones de navegación según sea necesario
+            btnPreviousPage.Enabled = (currentPage > 1);
+            btnNextPage.Enabled = (currentPage < totalPages);
         }
 
         private void BindGrid()
@@ -43,6 +56,31 @@ namespace CrudPracticaMVP.Custom.RepsolPeru.BackOffice.VistaGrilla
             gridView1.VirtualItemCount = 20;
             gridView1.PageIndex = e.NewPageIndex;
             this.BindGrid();
+        }
+
+        protected void btnGoToPage_Click(object sender, EventArgs e)
+        {
+            int pageNumber;
+            if(int.TryParse(txtPageNumber.Text, out pageNumber))
+            {
+                if(pageNumber >= 1 && pageNumber <= gridView1.PageCount)
+                {
+                    gridView1.PageIndex = pageNumber - 1;
+                    this.BindGrid();
+                }
+            }
+        }
+
+        protected void btnPreviousPage_Click(object sender, EventArgs e)
+        {
+            gridView1.PageIndex -= 1;
+            BindGrid();
+        }
+
+        protected void btnNextPage_Click(object sender, EventArgs e)
+        {
+            gridView1.PageIndex += 1;
+            BindGrid();
         }
     }
 }
