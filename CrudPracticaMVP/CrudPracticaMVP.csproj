@@ -46,7 +46,25 @@
     <Reference Include="AjaxControlToolkit">
       <HintPath>..\packages\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="ASPNETJSUtils">
+      <HintPath>..\packages\ASPNETJSUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI">
+      <HintPath>..\packages\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\packages\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\packages\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\packages\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Custom\RepsolPeru\BackOffice\CargarExcel\UploadExcel.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ExportExcelOCsv\PracticaExport.aspx" />
     <Content Include="Custom\RepsolPeru\BackOffice\ModalAspx\Modal.aspx" />
@@ -94,6 +113,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\CargarExcel\UploadExcel.aspx.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RepsolPeru\BackOffice\CargarExcel\UploadExcel.aspx.designer.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom\RepsolPeru\BackOffice\CicloVidaAspx\PruebaCicloVida.aspx.cs">
       <DependentUpon>PruebaCicloVida.aspx</DependentUpon>
